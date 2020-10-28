@@ -1,16 +1,18 @@
 .main {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.cont {
+  padding-top: 50px;
+  display: inline-flex;
+  justify-content: center;
   flex-direction: column;
-  border: 1px solid grey;
-  margin: 10%;
-  overflow: hidden;
 }
 .list-parent {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
-  padding: 15px;
 }
 
 .heading-parent {
@@ -26,8 +28,30 @@
 }
 
 .item {
+  border: 1px solid grey;
+  overflow: hidden;
+}
+.title {
+  border-bottom: 1px solid grey;
+}
+.item-body {
   max-height: 400px;
   overflow-y: scroll;
-  border: 1px solid grey;
-  padding: 15px;
+}
+.item-body li {
+  margin-bottom: 10px;
+}
+.item-body li input {
+  border: 0;
+}
+.item-body li input:focus,
+.item-body li input:active {
+  border: 1px solid blue;
+}
+.without-border-right {
+  border-right: 0;
+}
+.title {
+  padding: 10px;
+  text-align: center;
 }

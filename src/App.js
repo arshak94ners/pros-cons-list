@@ -63,23 +63,29 @@ export default class App extends Component {
 
     return (
       <div className="main">
+        <div className="cont">
        <div className="heading-parent"><h1 className="heading">Should I eat at McDonalds?</h1> </div> 
         <div className="list-parent"> 
 
-          <div className="item">
-            <section className="item-headings">Pros</section>
+          <div className="item without-border-right">
+            <div className="title without-border-right">Pros</div>
+            <div className="item-body">
             <ol>
               {pros}
             </ol>
+            </div>
           </div>
 
           <div  className="item">
-            <section className="item-headings">Cons</section>
+          <div className="title">Cons</div>
+          <div className="item-body">
             <ol>
               {cons}
             </ol>
           </div>
+          </div>
         </div>
+      </div>
       </div>
     )
   }
